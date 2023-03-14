@@ -25,6 +25,11 @@ module.exports = {
             collapsable: true,
             children: ["leetcode/stack/20"],
           },
+          {
+            title: "哈希表",
+            collapsable: true,
+            children: ["leetcode/hashmap/389"],
+          },
         ],
       },
     ],
