@@ -1,6 +1,9 @@
 {
-    "scripts":{
-        "docs:dev":"vuepress dev docs",
-        "docu:build":"vuepress build docs"
+    "scripts": {
+        "docs:dev": "vuepress dev docs",
+        "docu:build": "vuepress build docs"
+    },
+    "dependencies": {
+        "vuepress": "^1.9.9"
     }
 }
