@@ -2,9 +2,20 @@ module.exports = {
   title: "宝哥博客",
   description: "Just playing around",
   themeConfig: {
-    // sidebarDepth: 1,
+    sidebarDepth: 1,
     displayAllHeaders: false,
     sidebar: [
+      {
+        title: "面试题",
+        collapsable: true,
+        children: [
+          {
+            title: "JS",
+            collapsable: true,
+            children: ["interview/js/datatype"],
+          },
+        ],
+      },
       {
         title: "JS基础",
         collapsable: true,
