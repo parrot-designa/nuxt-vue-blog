@@ -12,7 +12,13 @@ module.exports = {
           {
             title: "JS",
             collapsable: true,
-            children: ["interview/js/datatype"],
+            children: [
+              "interview/js/datatype",
+              "interview/js/valuetype",
+              "interview/js/scope",
+              "interview/js/closure",
+              "interview/js/prototype",
+            ],
           },
         ],
       },
