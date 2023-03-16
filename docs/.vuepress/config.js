@@ -18,7 +18,13 @@ module.exports = {
               "interview/js/scope",
               "interview/js/closure",
               "interview/js/prototype",
+              "interview/js/bdom",
             ],
+          },
+          {
+            title: "ql面试题",
+            collapsable: true,
+            children: ["interview/ql/1"],
           },
         ],
       },
