@@ -19,6 +19,7 @@ module.exports = {
               "interview/js/closure",
               "interview/js/prototype",
               "interview/js/bdom",
+              "interview/js/ajax"
             ],
           },
           {
