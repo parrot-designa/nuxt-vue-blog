@@ -10,7 +10,7 @@ const m = new Map([[{ a: "1" }, 2]]);
 
 ### 2.属性和方法
 
-1. size 属性
+1. `size` 属性
 
 ```js
 const map = new Map();
@@ -20,7 +20,7 @@ map.set("bar", false);
 map.size; // 2
 ```
 
-2. Map.prototype.set(key, value)
+2. `Map.prototype.set(key, value)`
 
 set 方法设置键名 key 对应的键值为 value，然后返回整个 Map 结构。如果 key 已经有值，则键值会被更新，否则就新生成该键。
 
@@ -38,7 +38,7 @@ set 方法返回的是当前的 Map 对象，因此可以采用链式写法。
 let map = new Map().set(1, "a").set(2, "b").set(3, "c");
 ```
 
-3. Map.prototype.get(key)
+3. `Map.prototype.get(key)`
 
 get 方法读取 key 对应的键值，如果找不到 key，返回 undefined。
 
@@ -53,7 +53,7 @@ m.set(hello, "Hello ES6!"); // 键是函数
 m.get(hello); // Hello ES6!
 ```
 
-4. Map.prototype.has(key)
+4. `Map.prototype.has(key)`
 
 has 方法返回一个布尔值，表示某个键是否在当前 Map 对象之中。
 
@@ -70,7 +70,7 @@ m.has(262); // true
 m.has(undefined); // true
 ```
 
-5. Map.prototype.delete(key)
+5. `Map.prototype.delete(key)`
 
 delete 方法删除某个键，返回 true。如果删除失败，返回 false。
 
@@ -83,7 +83,7 @@ m.delete(undefined);
 m.has(undefined); // false
 ```
 
-6. Map.prototype.clear()
+6. `Map.prototype.clear()`
 
 clear 方法清除所有成员，没有返回值。
 
@@ -99,10 +99,10 @@ map.size; // 0
 
 ### 3.遍历方法
 
-1. Map.prototype.keys()：返回键名的遍历器。
-2. Map.prototype.values()：返回键值的遍历器。
-3. Map.prototype.entries()：返回所有成员的遍历器。
-4. Map.prototype.forEach()：遍历 Map 的所有成员。
+1. `Map.prototype.keys()`：返回键名的遍历器。
+2. `Map.prototype.values()`：返回键值的遍历器。
+3. `Map.prototype.entries()`：返回所有成员的遍历器。
+4. `Map.prototype.forEach()`：遍历 Map 的所有成员。
 
 > Map 的遍历顺序就是`插入顺序`。
 
@@ -110,7 +110,7 @@ map.size; // 0
 
 ### 4.与其他数据结构的相互转换
 
-1. Map 转为数组
+1. `Map 转为数组`
 
 ```js
 const myMap = new Map().set(true, 7).set({ foo: 3 }, ["abc"]);
@@ -118,7 +118,7 @@ const myMap = new Map().set(true, 7).set({ foo: 3 }, ["abc"]);
 // [ [ true, 7 ], [ { foo: 3 }, [ 'abc' ] ] ]
 ```
 
-2. 数组转为 Map
+2. `数组转为 Map`
 
 将数组传入 Map 构造函数，就可以转为 Map。
 
@@ -133,7 +133,7 @@ new Map([
 // }
 ```
 
-3. Map 转为对象
+3. `Map 转为对象`
 
 如果所有 Map 的键都是字符串，它可以无损地转为对象。
 
@@ -152,7 +152,7 @@ strMapToObj(myMap);
 
 如果有非字符串的键名，那么这个键名会被转成字符串，再作为对象的键名。
 
-4. 对象转为 Map
+4. `对象转为 Map`
 
 对象转为 Map 可以通过`Object.entries()`。
 
@@ -173,7 +173,7 @@ objToStrMap({ yes: true, no: false });
 // Map {"yes" => true, "no" => false}
 ```
 
-5. Map 转为 JSON
+5. `Map 转为 JSON`
 
 Map 转为 JSON 要区分两种情况。一种情况是，Map 的键名都是字符串，这时可以选择转为对象 JSON。
 
@@ -199,7 +199,7 @@ mapToArrayJson(myMap);
 // '[[true,7],[{"foo":3},["abc"]]]'
 ```
 
-6. JSON 转为 Map
+6. `JSON 转为 Map`
 
 SON 转为 Map，正常情况下，所有键名都是字符串。
 
