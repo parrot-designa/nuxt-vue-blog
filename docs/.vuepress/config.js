@@ -33,7 +33,15 @@ module.exports = {
               "interview/ql/2",
               "interview/ql/3",
               "interview/ql/4",
-              "interview/ql/5",
+              "interview/ql/5"
+            ],
+          },
+          {
+            title: "vue面试题",
+            collapsable: true,
+            children: [
+              "interview/vue/1", 
+              "interview/vue/2", 
             ],
           },
         ],
@@ -67,6 +75,11 @@ module.exports = {
             title: "树",
             collapsable: true,
             children: ["leetcode/tree/100"],
+          },
+          {
+            title: "链表",
+            collapsable: true,
+            children: ["leetcode/linklist/21","leetcode/linklist/83"],
           },
         ],
       },
